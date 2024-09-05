@@ -281,11 +281,11 @@ function adjustMapSizeForDevice() {
     // デバイスごとの条件分岐
     if (/iphone/.test(userAgent)) {
         // iPhone向けのサイズ設定
-        mapElement.style.maxWidth = "280px";
+        mapElement.style.maxWidth = "auto";
         mapElement.style.height = "auto";
     } else if (/ipad/.test(userAgent)) {
         // iPad向けのサイズ設定
-        mapElement.style.maxWidth = "500px";
+        mapElement.style.maxWidth = "auto";
         mapElement.style.height = "auto";
     } else if (/macintosh/.test(userAgent)) {
         // Mac向けのサイズ設定
