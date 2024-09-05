@@ -32,6 +32,35 @@ body {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* iPhoneの場合 */
+    .title-container {
+        flex-direction: row; /* 横並び */
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-container h1 {
+        font-size: 28px; /* 小さくして横一列に収める */
+        white-space: nowrap;
+        margin: 0 10px; /* タイトルと画像の間に余白 */
+    }
+
+    .chart-container {
+        flex-direction: column; /* チャートは下に配置 */
+        align-items: center;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* iPadの場合 */
+    .title-container h1 {
+        font-size: 36px; /* 少し小さくする */
+        white-space: nowrap; /* 強制的に1行に収める */
+    }
+}
+
 h1 {
     display: flex;
     align-items: center;
