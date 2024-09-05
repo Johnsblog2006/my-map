@@ -8,27 +8,38 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 16px;
-        padding: 10px;
+    /* タイトル画像とタイトルを横並びに */
+    .title-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .title-image {
+        width: 60px; /* 画像サイズを小さく調整 */
+        height: auto;
+        margin-right: 10px;
     }
 
     .title-container h1 {
-        font-size: 32px;
-    }
-
-    .chart-container {
-        flex-direction: column;
+        font-size: 24px; /* タイトルフォントを小さく調整 */
+        white-space: nowrap;
         margin: 0;
     }
 
-    #prefectureChart {
-        max-width: 180px;
-        max-height: 180px;
+    /* チャートはタイトルの下で横並びに配置 */
+    .chart-container {
+        display: flex;
+        flex-direction: row; /* チャートを横に並べる */
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* タイトルとの間に余白 */
     }
 
-    #achievementBarChart {
-        max-width: 250px;
+    #prefectureChart, #achievementBarChart {
+        max-width: 150px; /* チャートサイズを調整 */
+        margin: 0 10px; /* チャート間に左右余白を追加 */
     }
 }
 
