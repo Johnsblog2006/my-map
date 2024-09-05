@@ -7,6 +7,31 @@ body {
     padding: 20px;
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .title-container h1 {
+        font-size: 32px;
+    }
+
+    .chart-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #prefectureChart {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    #achievementBarChart {
+        max-width: 250px;
+    }
+}
+
 h1 {
     display: flex;
     align-items: center;
@@ -111,6 +136,14 @@ h1 {
     cursor: pointer;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
+}
+
+/* 以下を追加 */
+@media only screen and (max-width: 768px) {
+    #selection-buttons button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
 }
 
 #selection-buttons button:hover {
