@@ -1,12 +1,32 @@
 document.addEventListener("DOMContentLoaded", function() {
     const prefectures = document.querySelectorAll('.prefecture');
     const buttonsContainer = document.getElementById('selection-buttons');
+
+    adjustMapSizeForDevice(); // ← この行を追加
+
     let currentPrefecture = null;
     let visitedCount = 0;
     let livedCount = 0;
     const totalPrefectures = 47;
 
     const prefectureStates = {};
+
+    const chartResize = () => {
+        const screenWidth = window.innerWidth;
+        const chart = document.getElementById('prefectureChart');
+        const barChart = document.getElementById('achievementBarChart');
+
+        if (screenWidth < 768) { // モバイルビュー
+            chart.style.maxWidth = "180px";
+            barChart.style.maxWidth = "250px";
+        } else { // デスクトップまたはタブレットビュー
+            chart.style.maxWidth = "214px";
+            barChart.style.maxWidth = "300px";
+        }
+    };
+
+    window.addEventListener('resize', chartResize);
+    chartResize(); // ページロード時にも実行
 
     const ctx = document.getElementById('prefectureChart').getContext('2d');
     let prefectureChart = new Chart(ctx, {
@@ -254,3 +274,29 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+function adjustMapSizeForDevice() {
+    const mapElement = document.querySelector('.geolonia-svg-map');
+    const userAgent = navigator.userAgent.toLowerCase();
+
+    // デバイスごとの条件分岐
+    if (/iphone/.test(userAgent)) {
+        // iPhone向けのサイズ設定
+        mapElement.style.maxWidth = "280px";
+        mapElement.style.height = "auto";
+    } else if (/ipad/.test(userAgent)) {
+        // iPad向けのサイズ設定
+        mapElement.style.maxWidth = "500px";
+        mapElement.style.height = "auto";
+    } else if (/macintosh/.test(userAgent)) {
+        // Mac向けのサイズ設定
+        mapElement.style.maxWidth = "auto";
+        mapElement.style.height = "auto";
+    } else {
+        // 他のデバイス（デスクトップや不明なデバイスなど）
+        mapElement.style.maxWidth = "600px";
+        mapElement.style.height = "auto";
+    }
+}
+
+// ページが読み込まれた際に実行
+document.addEventListener("DOMContentLoaded", adjustMapSizeForDevice);
