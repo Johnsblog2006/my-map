@@ -14,32 +14,34 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        margin-bottom: 20px; /* タイトルとチャートの間に余白を追加 */
     }
 
     .title-image {
-        width: 60px; /* 画像サイズを小さく調整 */
+        width: 60px; /* 画像サイズを調整 */
         height: auto;
-        margin-right: 10px;
+        margin-right: 10px; /* タイトルとの間に余白 */
     }
 
     .title-container h1 {
         font-size: 24px; /* タイトルフォントを小さく調整 */
-        white-space: nowrap;
+        white-space: nowrap; /* 強制的に1行で表示 */
         margin: 0;
     }
 
-    /* チャートはタイトルの下で横並びに配置 */
+    /* チャートをタイトルの下で横並びに配置 */
     .chart-container {
         display: flex;
-        flex-direction: row; /* チャートを横に並べる */
+        flex-direction: row; /* チャートを横並びにする */
         justify-content: center;
         align-items: center;
-        margin-top: 20px; /* タイトルとの間に余白 */
+        margin: 0 auto; /* 中央に配置 */
+        gap: 20px; /* チャート同士の間に余白 */
     }
 
     #prefectureChart, #achievementBarChart {
         max-width: 150px; /* チャートサイズを調整 */
-        margin: 0 10px; /* チャート間に左右余白を追加 */
+        max-height: 150px;
     }
 }
 
