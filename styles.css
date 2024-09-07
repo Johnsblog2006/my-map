@@ -8,6 +8,31 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .title-container h1 {
+        font-size: 32px;
+    }
+
+    .chart-container {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #prefectureChart {
+        max-width: 180px;
+        max-height: 180px;
+    }
+
+    #achievementBarChart {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
     /* タイトル画像とタイトルを横並びに */
     .title-container {
         display: flex;
