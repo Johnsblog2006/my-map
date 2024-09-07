@@ -11,37 +11,41 @@ body {
     /* タイトル画像とタイトルを横並びに */
     .title-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: row;  /* タイトル画像とタイトルを横並びに */
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px; /* タイトルとチャートの間に余白を追加 */
+        margin-bottom: 20px; /* タイトルとチャートの間に余白 */
     }
 
     .title-image {
-        width: 60px; /* 画像サイズを調整 */
+        width: 60px; /* 画像のサイズを調整 */
         height: auto;
         margin-right: 10px; /* タイトルとの間に余白 */
     }
 
     .title-container h1 {
-        font-size: 24px; /* タイトルフォントを小さく調整 */
-        white-space: nowrap; /* 強制的に1行で表示 */
+        font-size: 24px; /* タイトルフォントを小さくして横に収める */
+        white-space: nowrap; /* タイトルが改行されないようにする */
         margin: 0;
     }
 
-    /* チャートをタイトルの下で横並びに配置 */
+    /* チャートを横並びに配置 */
     .chart-container {
         display: flex;
-        flex-direction: row; /* チャートを横並びにする */
+        flex-direction: row;  /* チャートを横並びにする */
         justify-content: center;
         align-items: center;
-        margin: 0 auto; /* 中央に配置 */
-        gap: 20px; /* チャート同士の間に余白 */
+        width: 100%; /* 横幅いっぱいに表示 */
+        margin-top: 20px; /* タイトルとの間に余白 */
     }
 
-    #prefectureChart, #achievementBarChart {
-        max-width: 150px; /* チャートサイズを調整 */
-        max-height: 150px;
+    #prefectureChart {
+        max-width: 150px; /* チャートのサイズを調整 */
+        margin-right: 20px; /* 2つのチャートの間に余白を追加 */
+    }
+
+    #achievementBarChart {
+        max-width: 150px; /* チャートのサイズを調整 */
     }
 }
 
