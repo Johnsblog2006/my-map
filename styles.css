@@ -36,7 +36,7 @@ body {
     /* チャート全体の余白調整 */
     .chart-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-top: 5px; /* 余白を最小限に */
