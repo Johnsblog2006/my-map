@@ -49,19 +49,19 @@ body {
         align-items: center;
         width: 100%;
         overflow: visible; /* コンテンツのはみ出しを表示 */
-        gap: 10px; /* チャート同士の間に余白 */
+        gap: 5px; /* チャート同士の間に余白 */
     }
 
     /* チャートサイズの調整 */
     #prefectureChart {
         max-width: 130px;
         max-height: 130px;
+        margin-bottom: 0; /* 下の余白を削除 */
     }
 
     #achievementBarChart {
         margin-right: 20px;
-        margin-top: 5px;
-        width: 100%;
+        margin-top: 0;
         max-width: 250px;
         height: 20px;
     }
@@ -70,8 +70,7 @@ body {
         position: relative;
         width: auto;
         max-width: 300px; /* 幅を広げる */
-        margin-top: 10px;
-        margin-right: auto;
+        margin-top: 0;
         white-space: nowrap; /* テキストを折り返さない */
     }
 
