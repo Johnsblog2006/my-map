@@ -195,3 +195,59 @@ h1 {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
 }
+
+/* 以下を追加 */
+@media only screen and (max-width: 768px) {
+    #selection-buttons button {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+}
+
+#selection-buttons button:hover {
+    background-color: #ff7f50;
+}
+
+#achievementBarChart {
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 20px;
+}
+
+#achievement-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#train-emoji {
+    position: absolute;
+    left: 0;
+    bottom: -17%; /* Position the emoji above the bar chart */
+    font-size: 24px; /* Adjust size as needed */
+    transition: left 0.3s ease; /* Smooth transition */
+}
+
+#achievementBarChart {
+    width: 100%;
+    height: 20px;
+}
+
+#train-emoji-container {
+    position: relative;
+    display: inline-block;
+    align-items: center; /* 垂直方向に中央揃え */
+    justify-content: center;
+}
+
+#achievement-percentage {
+    position: absolute;
+    top: 50%; /* 中心に配置 */
+    left: 50%;
+    transform: translate(-5%, -272%); /* 水平方向と垂直方向の中心に移動 */
+    font-size: 12px;
+    color: #79d587;
+    z-index: 10; /* 絵文字の上に表示 */
+}
