@@ -40,7 +40,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 20px; /* タイトルとの間に余白 */
+        margin-top: 5px; /* タイトルとの間に余白 */
     }
 
     /* チャートを横並びに配置 */
@@ -53,15 +53,15 @@ body {
     }
 
     #prefectureChart {
-        max-width: 150px; /* ドーナツ型チャートのサイズを調整 */
+        max-width: 170px; /* ドーナツ型チャートのサイズを調整 */
         max-height: 150px;
         margin-right: 20px; /* チャート間に余白を追加 */
     }
 
     #achievementBarChart {
-        max-width: 250px; /* バーグラフのサイズを調整 */
+        max-width: 200px; /* バーグラフのサイズを調整 */
         max-height: 180px;
-        margin-right: 0; /* 最後のチャートには余白をなくす */
+        margin-right: 5px; /* 最後のチャートには余白をなくす */
     }
 
     #achievement-container {
