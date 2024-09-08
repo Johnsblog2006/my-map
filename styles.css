@@ -72,7 +72,6 @@ body {
         margin-top: 10px;
         margin-left: 10px; /* チャートとテキストに少し余白を追加 */
         white-space: nowrap; /* テキストが折り返されないようにする */
-        overflow: visible; /* はみ出し部分を表示 */
     }
 
     #selection-buttons button {
