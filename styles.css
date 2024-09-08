@@ -19,7 +19,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 5px; /* さらに余白を縮小 */
+        margin-bottom: 0; /* タイトルとチャートの間の余白を削除 */
     }
 
     .title-image {
@@ -34,7 +34,7 @@ body {
         margin: 0;
     }
 
-    /* チャートの余白調整 */
+    /* チャート全体の余白調整 */
     .chart-wrapper {
         display: flex;
         flex-direction: column;
@@ -51,6 +51,7 @@ body {
         width: 100%;
     }
 
+    /* チャートサイズの調整 */
     #prefectureChart {
         max-width: 150px;
         max-height: 150px;
@@ -65,18 +66,14 @@ body {
 
     /* ボタンのサイズを強制的に小さく */
     #selection-buttons button {
-        padding: 5px 10px !important; /* 余白を縮小 */
-        font-size: 12px !important; /* フォントサイズを小さく */
+        padding: 5px 10px !important; /* ボタンの余白を小さく */
+        font-size: 12px !important; /* フォントサイズを縮小 */
         width: 80px !important; /* ボタンの横幅を指定 */
         height: 35px !important; /* ボタンの高さを指定 */
         margin: 3px !important; /* ボタン間の余白を調整 */
     }
 
-    /* タイトルの余白調整 */
-    .title-container {
-        margin-bottom: 5px !important;
-    }
-
+    /* ボタンの中央揃え */
     #selection-buttons {
         display: flex;
         flex-direction: column;
@@ -87,8 +84,8 @@ body {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     /* iPadの場合 */
     .title-container h1 {
-        font-size: 36px; /* 少し小さくする */
-        white-space: nowrap; /* 強制的に1行に収める */
+        font-size: 36px;
+        white-space: nowrap;
     }
 }
 
