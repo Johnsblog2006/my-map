@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const barChart = document.getElementById('achievementBarChart');
 
         if (screenWidth < 768) { // モバイルビュー
-            chart.style.maxWidth = "130px";
+            chart.style.maxWidth = "120px";
             barChart.style.maxWidth = "250px";
         } else { // デスクトップまたはタブレットビュー
             chart.style.maxWidth = "214px";
