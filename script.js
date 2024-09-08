@@ -50,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function() {
                     align: 'center',
                     labels: {
                         boxWidth: 15,
-                        padding: 20,
+                        padding: 4,
                         font: {
-                            size: 9
+                            size: 12
                         },
                         usePointStyle: true,
                         pointStyle: 'circle',
