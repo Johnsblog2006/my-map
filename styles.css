@@ -72,7 +72,6 @@ body {
         width: auto;
         max-width: 300px; /* 幅を広げる */
         margin-top: 10px;
-        margin-left: auto;
         margin-right: auto;
         white-space: nowrap; /* テキストを折り返さない */
     }
