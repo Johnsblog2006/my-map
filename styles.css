@@ -16,31 +16,31 @@ body {
     /* タイトル画像とタイトルを横並びに */
     .title-container {
         display: flex;
-        flex-direction: row; /* タイトル画像とタイトルを横並びに */
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 10px; /* タイトルとチャートの間の余白を小さく */
+        margin-bottom: 5px; /* さらに余白を縮小 */
     }
 
     .title-image {
-        width: 60px; /* 画像のサイズを調整 */
+        width: 60px;
         height: auto;
-        margin-right: 10px; /* タイトルとの間に余白 */
+        margin-right: 10px;
     }
 
     .title-container h1 {
-        font-size: 24px; /* タイトルフォントを小さくして横に収める */
-        white-space: nowrap; /* タイトルが改行されないようにする */
+        font-size: 24px;
+        white-space: nowrap;
         margin: 0;
     }
 
-    /* チャートを横並びに配置 */
+    /* チャートの余白調整 */
     .chart-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 0px; /* タイトルとの間の余白を減らす */
+        margin-top: 0px; /* 余白を完全に除去 */
     }
 
     .chart-container {
@@ -48,7 +48,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%; /* 横幅いっぱいに表示 */
+        width: 100%;
     }
 
     #prefectureChart {
@@ -63,14 +63,15 @@ body {
         margin-right: 0;
     }
 
-    /* ボタンのサイズを調整 */
+    /* ボタンのサイズを強制的に小さく */
     #selection-buttons button {
-        padding: 8px 15px; /* ボタンのサイズを小さく */
-        font-size: 14px; /* フォントサイズも小さく */
-        margin: 5px; /* ボタン間の余白を調整 */
+        padding: 5px 10px; /* 余白をさらに減らす */
+        font-size: 12px; /* フォントサイズをさらに小さく */
+        width: 80px; /* ボタンの横幅を小さく */
+        height: 35px; /* ボタンの高さを小さく */
+        margin: 3px; /* ボタン間の余白を調整 */
     }
 
-    /* ボタンのレイアウト調整 */
     #selection-buttons {
         display: flex;
         flex-direction: column;
