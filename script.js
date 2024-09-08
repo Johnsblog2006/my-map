@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const barChart = document.getElementById('achievementBarChart');
 
         if (screenWidth < 768) { // モバイルビュー
-            chart.style.maxWidth = "150px";
+            chart.style.maxWidth = "130px";
             barChart.style.maxWidth = "250px";
         } else { // デスクトップまたはタブレットビュー
             chart.style.maxWidth = "214px";
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         boxWidth: 15,
                         padding: 15,
                         font: {
-                            size: 10
+                            size: 9
                         },
                         usePointStyle: true,
                         pointStyle: 'circle',
