@@ -59,16 +59,18 @@ body {
     }
 
     #achievementBarChart {
-        margin-right: 20px; /* バーグラフの右側に余白を追加 */
-        max-width: 250px;
-        height: 20px;
+        margin-top: 10px; /* チャート上の余白を少し減らす */
+        max-width: 250px; /* 幅を調整 */
+        height: 20px; /* 高さを固定 */
     }
 
     #achievement-container {
         position: relative;
-        max-width: 250px;
-        margin-left: 10px; /* チャートとテキストに少し余白を追加 */
-        overflow: visible; /* はみ出し部分を表示 */
+        width: 100%;
+        max-width: 250px; /* コンテナの幅をバーチャートと合わせる */
+        margin-top: 10px; /* 上部の余白を減らす */
+        margin-left: auto; /* 左右に配置されるように */
+        margin-right: auto; /* 左右に配置されるように */
     }
 
     #selection-buttons button {
