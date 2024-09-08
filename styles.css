@@ -71,7 +71,7 @@ body {
         width: 100%;
         max-width: 2500px;
         margin-top: 10px;
-        margin-left: auto;
+        margin-left: 10px; /* チャートとテキストに少し余白を追加 */
     }
 
     #selection-buttons button {
