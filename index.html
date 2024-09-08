@@ -11,14 +11,20 @@
     <div class="title-container">
         <img src="Alpaca.PNG" alt="Alpaca" class="title-image">
         <h1>訪れた都道府県</h1>
+    </div>
+
+    <!-- チャートラッパーを追加 -->
+    <div class="chart-wrapper">
         <div class="chart-container">
             <canvas id="prefectureChart"></canvas> <!-- ドーナツ型チャート -->
+            
+            <!-- バーグラフとその関連情報 -->
             <div id="achievement-container">
+                <canvas id="achievementBarChart"></canvas> <!-- バーグラフ -->
                 <div id="train-emoji">
                     <span id="achievement-percentage"></span>
                     <span id="train-emoji">😬</span>
                 </div>
-                <canvas id="achievementBarChart"></canvas>
             </div>
         </div>
     </div>
