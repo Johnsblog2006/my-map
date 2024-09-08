@@ -59,8 +59,8 @@ body {
     }
 
     #achievementBarChart {
-        max-width: 250px;
-        max-height: 180px;
+        max-width: 150px;
+        max-height: 20px;
         margin-right: 0;
     }
 
