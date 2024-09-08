@@ -72,6 +72,7 @@ body {
         max-width: 300px; /* 幅を広げる */
         margin-top: 0;
         white-space: nowrap; /* テキストを折り返さない */
+        overflow: visible; /* はみ出し部分を表示 */
     }
 
     /* テキストがはみ出さないように調整 */
