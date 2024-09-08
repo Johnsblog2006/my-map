@@ -181,6 +181,7 @@ body {
         width: 100%;
         max-width: 600px; /* 地図のコンテナ幅を調整 */
         margin: 0 auto; /* 地図を中央に配置 */
+        text-align: center;
     }
 
     #prefectureChart {
@@ -224,6 +225,7 @@ body {
         text-align: center;
     }
 }
+
 h1 {
     display: flex;
     align-items: center;
