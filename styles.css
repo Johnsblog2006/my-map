@@ -19,7 +19,7 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-bottom: 2px !important; /* タイトルとチャートの間の余白を削除 */
+        margin-bottom: 2px; /* タイトルとチャートの間の余白を削除 */
     }
 
     .title-image {
@@ -39,7 +39,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5px !important; /* 余白を完全に除去 */
+        margin-top: 5px; /* 余白を完全に除去 */
     }
 
     .chart-container {
@@ -69,9 +69,9 @@ body {
         position: relative;
         width: auto; /* コンテナの幅を自動に設定 */
         max-width: 300px;
-        margin-top: 10px;
         margin-left: 10px; /* チャートとテキストに少し余白を追加 */
         white-space: nowrap; /* テキストが折り返されないようにする */
+        overflow: visible; /* はみ出し部分を表示 */
     }
 
     #selection-buttons button {
