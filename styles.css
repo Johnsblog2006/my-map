@@ -218,7 +218,7 @@ body {
         left: 60%;
         transform: translate(-50%, -50%);
         font-size: 14px;
-        color: #79d587;
+        color: #333;
         z-index: 10;
         white-space: nowrap;
     }
