@@ -164,6 +164,7 @@ body {
         align-items: center;
         margin-top: 10px;
         width: 100%; /* 幅を100%にして中央に揃える */
+        text-align: center; /* チャート自体のテキストを中央に */
     }
 
     .chart-container {
@@ -173,6 +174,7 @@ body {
         align-items: center;
         width: 100%;
         overflow: visible;
+        text-align: center; /* チャートコンテンツも中央揃えに */
     }
 
     #prefectureChart {
@@ -186,6 +188,7 @@ body {
         width: 100%;
         max-width: 300px;
         height: 25px;
+        text-align: center; /* バーチャートも中央に */
     }
 
     #achievement-container {
