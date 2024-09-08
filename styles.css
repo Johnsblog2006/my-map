@@ -130,7 +130,7 @@ body {
     }
 }
     
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 2360px) {
     /* iPadの場合 */
     .title-container h1 {
         font-size: 36px; /* 少し小さくする */
