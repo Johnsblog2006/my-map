@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     align: 'center',
                     labels: {
                         boxWidth: 15,
-                        padding: 4,
+                        padding: 12,
                         font: {
                             size: 12
                         },
