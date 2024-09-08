@@ -54,7 +54,7 @@ body {
 
     /* チャートサイズの調整 */
     #prefectureChart {
-        max-width: 150px;
+        max-width: 160px;
         max-height: 150px;
         margin-right: 20px;
     }
