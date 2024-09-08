@@ -13,26 +13,6 @@ body {
         padding: 10px;
     }
 
-    .title-container h1 {
-        font-size: 32px;
-    }
-
-    .chart-container {
-        flex-direction: column;
-        margin: 0;
-    }
-
-    #prefectureChart {
-        max-width: 180px;
-        max-height: 180px;
-    }
-
-    #achievementBarChart {
-        max-width: 250px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
     /* タイトル画像とタイトルを横並びに */
     .title-container {
         display: flex;
@@ -54,30 +34,51 @@ body {
         margin: 0;
     }
 
-    /* チャートをタイトルの下で横並びに配置 */
-    .chart-wrapper { /* 新しくラップコンテナを作成 */
+    /* チャート全体を横並びに配置 */
+    .chart-wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .chart-container {
-        display: flex;
-        flex-direction: row; /* チャートを横並びにする */
-        justify-content: center;
-        align-items: center;
-        width: 100%; /* 横幅いっぱいに表示 */
         margin-top: 20px; /* タイトルとの間に余白 */
     }
 
-    #prefectureChart, #achievementBarChart {
-        max-width: 150px; /* チャートのサイズを調整 */
-        margin-right: 20px; /* 2つのチャートの間に余白を追加 */
+    /* チャートを横並びに配置 */
+    .chart-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%; /* 横幅いっぱいに表示 */
+    }
+
+    #prefectureChart {
+        max-width: 150px; /* ドーナツ型チャートのサイズを調整 */
+        max-height: 150px;
+        margin-right: 20px; /* チャート間に余白を追加 */
     }
 
     #achievementBarChart {
+        max-width: 250px; /* バーグラフのサイズを調整 */
+        max-height: 180px;
         margin-right: 0; /* 最後のチャートには余白をなくす */
+    }
+
+    #achievement-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    #train-emoji {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #train-emoji span {
+        margin-right: 5px; /* 絵文字とテキストに少し余白を追加 */
     }
 }
 
