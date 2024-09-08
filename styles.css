@@ -59,19 +59,20 @@ body {
     }
 
     #achievementBarChart {
-        max-width: 150px;
-        max-height: 20px;
-        margin-right: 0;
-    }
+    margin-top: 20px;
+    max-width: 300px;
+    max-height: 20px;
+    width: 100%;
+    height: 20px;
+}
 
-    /* ボタンのサイズを強制的に小さく */
-    #selection-buttons button {
-        padding: 5px 10px !important; /* ボタンの余白を小さく */
-        font-size: 12px !important; /* フォントサイズを縮小 */
-        width: 50px !important; /* ボタンの横幅を指定 */
-        height: 20px !important; /* ボタンの高さを指定 */
-        margin: 3px !important; /* ボタン間の余白を調整 */
-    }
+#selection-buttons button {
+    padding: 5px 10px !important; /* 小さく調整 */
+    font-size: 12px !important;
+    width: 80px !important;
+    height: 35px !important;
+    margin: 3px !important;
+}
 
     /* ボタンの中央揃え */
     #selection-buttons {
