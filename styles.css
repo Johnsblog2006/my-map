@@ -49,6 +49,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
+        padding-right: 10px; /* 右に余白を追加して文字が切れないようにする */
     }
 
     /* チャートサイズの調整 */
@@ -60,6 +61,7 @@ body {
 
     #achievementBarChart {
         margin-top: 10px;
+        margin-right: 20px; /* バーグラフの右側に余白を追加 */
         max-width: 250px;
         height: 20px;
     }
