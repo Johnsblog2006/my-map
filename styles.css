@@ -166,7 +166,7 @@ body {
     /* チャート全体を中央に配置するための調整 */
     .chart-wrapper {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -181,13 +181,12 @@ body {
         width: 100%;
         max-width: 600px; /* 地図のコンテナ幅を調整 */
         margin: 0 auto; /* 地図を中央に配置 */
-        text-align: center;
     }
 
     #prefectureChart {
         max-width: 150px;
         max-height: 150px;
-        margin-right: 0;
+        margin-right: 20px;
     }
 
     #achievementBarChart {
@@ -214,6 +213,7 @@ body {
         align-items: center;
         justify-content: center;
         text-align: center;
+        margin-top: 20px;
     }
 
     #selection-buttons button {
