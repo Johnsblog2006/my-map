@@ -48,8 +48,8 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        overflow: visible;
-        padding-right: 10px; /* 右側の余白を少し調整 */
+        padding-right: 40px; /* 右側の余白を増やして文字切れを防止 */
+        overflow: visible; /* コンテンツのはみ出しを表示 */
     }
 
     /* チャートサイズの調整 */
@@ -68,12 +68,12 @@ body {
 
     #achievement-container {
         position: relative;
-        width: 100%;
-        max-width: 250px;
+        width: auto; /* 幅を自動に設定 */
+        max-width: 280px; /* コンテナの幅を少し広げる */
         margin-top: 10px;
         margin-left: auto;
         margin-right: auto;
-        white-space: nowrap;
+        white-space: nowrap; /* テキストを折り返さない */
     }
 
     #achievement-percentage {
@@ -111,7 +111,7 @@ body {
     #selection-buttons button:hover {
         background-color: #ff7f50;
     }
-    
+
     #train-emoji {
         position: absolute;
         left: 0;
