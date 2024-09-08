@@ -49,7 +49,7 @@ body {
         align-items: center;
         width: 100%;
         overflow: visible; /* コンテンツのはみ出しを表示 */
-        gap: 20px; /* チャート同士の間に余白 */
+        gap: 10px; /* チャート同士の間に余白 */
     }
 
     /* チャートサイズの調整 */
