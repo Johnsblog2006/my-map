@@ -69,7 +69,7 @@ body {
     #achievement-container {
         position: relative;
         width: 100%;
-        max-width: 2500px;
+        max-width: 250px;
         margin-top: 10px;
         margin-left: 10px; /* チャートとテキストに少し余白を追加 */
     }
