@@ -48,7 +48,7 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        padding-right: 30px; /* 右に余白を追加して文字が切れないようにする */
+        padding-right: 40px; /* 右に余白を追加して文字が切れないようにする */
         overflow: visible; /* コンテンツのはみ出しを表示 */
     }
 
