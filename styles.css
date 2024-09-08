@@ -39,7 +39,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 5px; /* 余白を完全に除去 */
+        margin-top: 5px; /* 余白を最小限に */
     }
 
     .chart-container {
@@ -48,7 +48,8 @@ body {
         justify-content: center;
         align-items: center;
         width: 100%;
-        overflow: visible; /* コンテンツのはみ出しを表示 */
+        overflow: visible;
+        padding-right: 10px; /* 右側の余白を少し調整 */
     }
 
     /* チャートサイズの調整 */
@@ -59,22 +60,36 @@ body {
     }
 
     #achievementBarChart {
-        margin-top: 10px; /* チャート上の余白を少し減らす */
-        max-width: 250px; /* 幅を調整 */
+        margin-top: 10px;
+        width: 100%; /* 幅を親要素に合わせる */
+        max-width: 250px; /* 最大幅を設定 */
         height: 20px; /* 高さを固定 */
     }
 
     #achievement-container {
         position: relative;
         width: 100%;
-        max-width: 250px; /* コンテナの幅をバーチャートと合わせる */
-        margin-top: 10px; /* 上部の余白を減らす */
-        margin-left: auto; /* 左右に配置されるように */
-        margin-right: auto; /* 左右に配置されるように */
+        max-width: 250px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        white-space: nowrap;
     }
 
+    #achievement-percentage {
+        position: absolute;
+        top: 50%;
+        left: 55%; /* テキストの位置をさらに調整 */
+        transform: translate(-50%, -50%);
+        font-size: 12px;
+        color: #79d587;
+        z-index: 10;
+        white-space: nowrap;
+    }
+
+    /* ボタンのスタイル調整 */
     #selection-buttons button {
-        padding: 5px 10px !important; /* 小さく調整 */
+        padding: 5px 10px !important;
         font-size: 14px !important;
         width: 80px !important;
         height: 35px !important;
@@ -88,7 +103,7 @@ body {
         align-items: center;
     }
 
-     #selection-buttons button {
+    #selection-buttons button {
         padding: 15px 30px;
         font-size: 18px;
     }
@@ -100,27 +115,16 @@ body {
     #train-emoji {
         position: absolute;
         left: 0;
-        bottom: -17%; /* Position the emoji above the bar chart */
-        font-size: 24px; /* Adjust size as needed */
-        transition: left 0.3s ease; /* Smooth transition */
+        bottom: -17%; /* 絵文字の位置を上に */
+        font-size: 24px;
+        transition: left 0.3s ease;
     }
 
     #train-emoji-container {
         position: relative;
         display: inline-block;
-        align-items: center; /* 垂直方向に中央揃え */
+        align-items: center;
         justify-content: center;
-    }
-    
-    #achievement-percentage {
-        position: absolute;
-        top: 50%; /* 中心に配置 */
-        left: 50%;
-        transform: translate(-5%, -272%); /* 水平方向と垂直方向の中心に移動 */
-        font-size: 12px;
-        color: #79d587;
-        z-index: 10; /* 絵文字の上に表示 */
-        white-space: nowrap; /* テキストが折り返されないようにする */
     }
 }
     
