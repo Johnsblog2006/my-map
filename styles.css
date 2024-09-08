@@ -19,7 +19,7 @@ body {
         flex-direction: row; /* タイトル画像とタイトルを横並びに */
         justify-content: center;
         align-items: center;
-        margin-bottom: 20px; /* タイトルとチャートの間に余白を追加 */
+        margin-bottom: 5px; /* タイトルとチャートの間に余白を追加 */
     }
 
     .title-image {
