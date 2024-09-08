@@ -68,8 +68,8 @@ body {
     #selection-buttons button {
         padding: 5px 10px !important; /* ボタンの余白を小さく */
         font-size: 12px !important; /* フォントサイズを縮小 */
-        width: 80px !important; /* ボタンの横幅を指定 */
-        height: 35px !important; /* ボタンの高さを指定 */
+        width: 50px !important; /* ボタンの横幅を指定 */
+        height: 20px !important; /* ボタンの高さを指定 */
         margin: 3px !important; /* ボタン間の余白を調整 */
     }
 
